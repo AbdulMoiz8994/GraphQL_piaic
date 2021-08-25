@@ -1,23 +1,35 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react'
 import './App.css';
+import axios from 'axios'
+
 
 function App() {
+
+   const api= axios.create({
+    baseURL: 'https://api.github.com'
+   })
+  
+ const [user, setData]=useState(null);
+ const [userRepos, setRepos]=useState(null)
+
+//  ComponentDid Mount
+  useEffect(() => {
+    (async() =>{
+         const {data: user}=await api.get('/users/abdulmoiz8994').catch((error) => {
+               console.log(error);
+         })
+         console.log(user);
+         setData(user)
+         const {data: repos}=await api.get('/users/AbdulMoiz8994/repos')
+         console.log(repos);
+         setRepos(repos)
+    })()
+  },[])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
     </div>
   );
 }
