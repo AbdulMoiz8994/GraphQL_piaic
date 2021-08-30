@@ -10,6 +10,7 @@ export const GithubApi = () => {
      const [userRepos, setRepos]=useState(null)
     
     //  ComponentDid Mount
+
       useEffect(() => {
         (async() =>{
              const {data: user}=await api.get('/users/abdulmoiz8994').catch((error) => {
@@ -21,7 +22,7 @@ export const GithubApi = () => {
              console.log(repos);
              setRepos(repos)
         })()
-      },[])
+      });
     
     return (
         <div>

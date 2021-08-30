@@ -1,13 +1,14 @@
 import React from 'react'
 import './App.css';
-import {GithubApi} from './Components/index'
+import {GithubApi,GithubGraphQl} from './Components/index'
 
 
 function App() {
 
   return (
     <div>
-      <GithubApi/>
+      {/* <GithubApi/> */}
+      <GithubGraphQl/>
     </div>
   );
 }
