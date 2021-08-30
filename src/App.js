@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import {GithubApi,GithubGraphQl,GithubGraphQl2} from './Components/index'
+import {GithubApi,GithubGraphQl,GithubGraphQl2,GrapghQlPract} from './Components/index'
 
 
 function App() {
@@ -9,7 +9,8 @@ function App() {
     <div>
       {/* <GithubApi/> */}
       {/* <GithubGraphQl/> */}
-      <GithubGraphQl2/>
+      {/* <GithubGraphQl2/> */}
+      <GrapghQlPract/>
     </div>
   );
 }
