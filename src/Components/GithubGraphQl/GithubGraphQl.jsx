@@ -33,7 +33,7 @@ export const GithubGraphQl = () => {
             }
          }
       }`
-    const res= await api.post('graphql', {query: QUERY_ORGAINZATION})  
+    const res= await api.post('/graphql', {query: QUERY_ORGAINZATION})  
        console.log("Res" , res);
   }
  useEffect(() =>{
