@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import {GithubApi,GithubGraphQl,GithubGraphQl2,GrapghQlPract,GrapghQlGithub,GithuHubPractice,ThirdMutation, QueryGithub,MutationGithub} from './Components/index'
+import {GithubApi,GithubGraphQl,GithubGraphQl2,GrapghQlPract,GrapghQlGithub,GithuHubPractice,ThirdMutation, QueryGithub,MutationGithub,MutationPratcie} from './Components/index'
 
 
 function App() {
@@ -15,7 +15,8 @@ function App() {
       {/* <GithuHubPractice/> */}
       {/* <ThirdMutation/> */}
       {/* <QueryGithub/> */}
-      <MutationGithub/>
+      {/* <MutationGithub/> */}
+      <MutationPratcie/>
     </div>
   );
 }
