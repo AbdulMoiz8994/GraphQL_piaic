@@ -5,4 +5,5 @@ export {GrapghQlPract} from './GithubGraphQl/CorrectWay/GrapghQlPract';
 export {GrapghQlGithub} from './SecondDay/GrapghQlGithub';
 export {GithuHubPractice} from './SecondDay/GithuHubPractice';
 export {ThirdMutation} from './ThirdMutation/ThirdMutation';
-export {QueryGithub} from './FourthDay/QueryGithub'
+export {QueryGithub} from './FourthDay/QueryGithub';
+export {MutationGithub} from './FourthDay/MutationGithub'
