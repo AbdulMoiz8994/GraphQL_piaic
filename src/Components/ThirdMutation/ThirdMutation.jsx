@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import axios from 'axios'; 
 
-
 export const ThirdMutation = () => {
 
     // make the api call via base url
