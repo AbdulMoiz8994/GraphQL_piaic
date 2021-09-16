@@ -36,7 +36,6 @@ export const SixGithubGraphQl = () => {
    };
    useEffect(() =>{
        fetchData("facebook", "google")
-
    },[])
 
    
